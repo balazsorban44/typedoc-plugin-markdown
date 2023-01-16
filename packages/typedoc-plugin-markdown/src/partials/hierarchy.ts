@@ -36,7 +36,5 @@ function getSymbol(level: number) {
   if (level === 1) {
     return '- ';
   }
-  return level > 1
-    ? `${[...Array(level - 1)].map(() => '  ').join('')} - `
-    : '';
+  return level > 1 ? `${[...Array(level - 1)].map(() => '  ').join('')}- ` : '';
 }

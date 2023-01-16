@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "lint": "eslint ./src --ext .ts",
-    "markdownlint": "npm run docs-md1 && npm run docs-md-2 && markdownlint ./docs/md",
+    "markdownlint": "npm run docs && markdownlint ./docs/md",
     "prepublishOnly": "npm run lint && npm run build && npm run test",
     "prebuild": "ts-node scripts/build-resources",
     "build": "rm -rf dist && tsc",

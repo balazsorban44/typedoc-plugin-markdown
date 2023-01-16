@@ -5,6 +5,7 @@ import {
 } from 'typedoc';
 import { heading } from '../support/els';
 import { getReflectionHeadingLevel, isConstructor } from '../support/helpers';
+import { escapeChars } from '../support/utils';
 import { MarkdownThemeRenderContext } from '../theme-context';
 
 export function member(
@@ -21,7 +22,7 @@ export function member(
 
   const title = context.partials.reflectionTitle(reflection, false);
 
-  md.push(heading(headingLevel, title));
+  md.push(heading(headingLevel, escapeChars(title)));
 
   if (
     [

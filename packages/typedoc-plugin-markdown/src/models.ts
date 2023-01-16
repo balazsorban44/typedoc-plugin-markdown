@@ -15,7 +15,7 @@ export interface TypedocPluginMarkdownOptions extends TypeDocOptionMap {
 }
 
 export interface TemplateMapping {
-  directory: string;
+  directory: string | null;
   template: any;
   isLeaf: boolean;
   kind: ReflectionKind;

@@ -89,7 +89,7 @@ export function load(app: Application) {
 
   app.options.addDeclaration({
     name: 'typeDeclarationStyle',
-    help: '[Markdown Plugin] Specify the Type Declaration Render Style',
+    help: '[Markdown Plugin] Specify the render style of type declarations.',
     type: ParameterType.String,
     defaultValue: 'list',
     validate: (option) => {

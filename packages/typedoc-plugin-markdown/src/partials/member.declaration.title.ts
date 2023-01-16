@@ -23,7 +23,7 @@ export function declarationMemberTitle(
     md.push(reflection.flags.map((flag) => `\`${flag}\``).join(' '));
   }
   md.push(
-    `${reflection.flags.isRest ? '... ' : ''} **${escapeChars(
+    `${reflection.flags.isRest ? '... ' : ''}**${escapeChars(
       reflection.name,
     )}**`,
   );

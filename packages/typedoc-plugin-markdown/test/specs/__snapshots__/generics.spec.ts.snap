@@ -53,13 +53,13 @@ exports[`Generics: should compile function with complex type params' 1`] = `
 `;
 
 exports[`Generics: should compile generics with defaults' 1`] = `
-" **genericsWithDefaults**: 
+"**genericsWithDefaults**: 
 
 [partial: sources]"
 `;
 
 exports[`Generics: should compile type with nested generics' 1`] = `
-" **nestedGenerics**: [\`Generic1\`](../types/Generic1.md)<[\`Generic2\`](../types/Generic2.md)<[\`Generic3\`](../types/Generic3.md)<\`string\`\\>\\>\\>
+"**nestedGenerics**: [\`Generic1\`](../types/Generic1.md)<[\`Generic2\`](../types/Generic2.md)<[\`Generic3\`](../types/Generic3.md)<\`string\`\\>\\>\\>
 
 [partial: sources]"
 `;

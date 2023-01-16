@@ -12,7 +12,6 @@ export function declarationMember(
   const headingLevel = getMemberHeadingLevel(
     declaration as DeclarationReflection,
   );
-
   md.push(context.partials.declarationMemberTitle(declaration));
 
   const typeDeclaration = (declaration.type as any)
